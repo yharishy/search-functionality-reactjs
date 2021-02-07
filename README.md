@@ -5,7 +5,7 @@
 
 Step1. git clone the project in local
 
-Step2. put the .env file in the project root directory having below variables . You can api keys by signing up at [marvel](https://developer.marvel.com/documentation/getting_started)
+Step2. put the .env file in the project root directory having below variables . You can get api keys by signing up at [marvel](https://developer.marvel.com/documentation/getting_started)
 
 ```bash
 REACT_APP_MARVEL_PUBLIC_KEY
