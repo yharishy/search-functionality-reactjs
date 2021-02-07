@@ -1,0 +1,119 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.wrapper {
+  text-align: left;
+  width: 60%;
+  border: 1px solid black;
+  margin: 20px 20%;
+  padding: 0px 20px 20px 20px;
+  clear: both;
+}
+
+.recentsearch {
+  font-size: 16px;
+}
+
+.keyword {
+  font-style: italic;
+}
+
+.wrapper .row{
+  padding: 5px;
+}
+
+.searchresult .row{
+  padding: 10px;
+  border-bottom: 1px solid;
+}
+
+.error{  
+  color: red;
+  font-size: 11px;
+  padding-left: 10px;
+}
+
+.loading{
+  font-style: italic;
+  font-size: 11px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+/* search result */
+
+.searchTitle span {
+  font-weight: bold;
+}
+
+.tblTitle{
+   margin-bottom:30px;
+   background:lightblue;
+}
+td, th{
+   padding:5px;
+   height:40px;
+   width:40px;
+   font-size:14px;
+}
+
+#vertical_scrolling_div{
+   display:inline-block;
+   zoom: 1;
+   *display:inline;
+   padding-top:40px;
+   height:300px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+}
+
+#freeze_container{
+   display:inline-block;
+   zoom: 1;
+   *display:inline;
+   vertical-align:top;
+   width:100px;
+}
+#horizontal_scrolling_div{
+   display:inline-block;
+   zoom: 1;
+   *display:inline;
+   width:200px;
+   overflow-x:scroll;
+   vertical-align:top;
+}
+
+.freeze_table{   
+   background-color: #0099dd;
+   z-index:2;
+}
+
+#left_table{
+   width:100px;
+}
+
+#inner_table{
+   width:400px;
+   overflow:hidden;
+}
