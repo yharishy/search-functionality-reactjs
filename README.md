@@ -12,10 +12,10 @@ REACT_APP_MARVEL_PUBLIC_KEY
 REACT_APP_MARVEL_PRIVATE_KEY
 ```
 
-Step3. do npm run install
+Step3. do npm install
 
 ```bash
-npm run install
+npm install
 ```
 
 Step4. do npm run build
