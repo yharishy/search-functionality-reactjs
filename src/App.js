@@ -3,7 +3,7 @@ import './App.css';
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Searchbox from "./components/Searchbox";
-import Searchresult from "./components/Searchresult";
+const Searchresult = React.lazy(() => import("./components/Searchresult"));
 
 const categoryDetail = [ 
   {type: "characters", field: 'nameStartsWith'},

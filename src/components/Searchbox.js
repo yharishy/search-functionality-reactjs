@@ -14,14 +14,17 @@ function Searchbox({ defaultKeyword, defaultCategory, categoryDetail, onSearchCb
     }
     return (
       <React.Fragment>
-        <div className='row'>
+        <div className='row'> 
           Search: <input type="text" value={keyword} onChange={e => setKeyword(e.target.value)} />
           {error && (<span className='error'> {error}</span>)}
         </div>        
         <div className='row'>
           <ul>
           {categoryDetail.map(item => (
-            <li key={item.type}><input type="radio" id={item.type} value={item.type} checked={category.type==item.type} onChange={() => setCategory(item)} /><label>{item.type}</label></li>
+            <li key={item.type}>
+              <input type="radio" id={item.type} value={item.type} checked={category.type==item.type} onChange={() => setCategory(item)} />
+              <label htmlFor={item.type}>{item.type}</label>
+            </li>
           ))};  
           </ul>
         </div>
