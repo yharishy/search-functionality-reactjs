@@ -15,7 +15,9 @@ function Searchbox({ defaultKeyword, defaultCategory, categoryDetail, onSearchCb
     return (
       <React.Fragment>
         <div className='row'> 
-          Search: <input type="text" value={keyword} onChange={e => setKeyword(e.target.value)} />
+          <label htmlFor="keyword" >
+          Search: <input type="text" id="keyword" value={keyword} onChange={e => setKeyword(e.target.value)} />  
+          </label> 
           {error && (<span className='error'> {error}</span>)}
         </div>        
         <div className='row'>
